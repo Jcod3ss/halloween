@@ -12,7 +12,6 @@ function setup(){
 }
 
 function draw(){
-  //sky
   background(35,20,70);
 
 
