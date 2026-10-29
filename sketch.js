@@ -7,14 +7,20 @@ let ghostSpeed = 2;
 let moonSize = 60;
 let moonSpeed = 0.5;
 
-function setup(){
+let jack;
+let frank;
+
+async function setup() {
   createCanvas(400,400);
+  jack = await loadImage('jack.jpg');
+frank = createVideo("frank.mp4");
+
 }
 
 function draw(){
   background(35,20,70);
-
-
+image(jack,150,150,100,100)
+frank.play();
 //moon
 fill(255,230,120);
 ellipse(320,70,60,60);
